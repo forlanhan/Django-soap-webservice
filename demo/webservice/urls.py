@@ -1,5 +1,8 @@
-﻿from django.conf.urls import patterns, include, url
+﻿
+from django.conf.urls import url
+import views
 
-urlpatterns = patterns('webservice.views',
-    (r'get_student_soap$', 'get_student_soap'),
-)
+urlpatterns = [
+    url(r'get_student_soap$', views.get_student_soap),
+]
+
